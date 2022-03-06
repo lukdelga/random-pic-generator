@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#main-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-flow: row wrap;
+    margin: auto 2em;
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.generator-div > div {
+    min-height: 550px;
+    min-width: 450px;
+    background-color: rgb(202, 135, 9);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.generator-div {
+    text-align: center;
+    margin: 10px;
+    animation: div-animation;
+    animation-duration: 4s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-container {
+    max-width: 450px;
+    max-height: auto;
+}
+
+@keyframes div-animation {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
 }
